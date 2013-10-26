@@ -20,4 +20,21 @@ body{
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
+} 
+
+#header{
+  font-family:'Raleway', sans-serif;;
+  background-color:rgba(256, 256, 256, 0.92);
+  color: #ffffff;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:1em;
+  padding-top:0.8em;
+  padding-bottom:0.1em;
+}
+
+#main{
+  padding:2em;
+
 }
