@@ -1,0 +1,4 @@
+{"r_basicprofile":["headline":"industry"],
+"r_fullprofile":["skills", "interests"],
+"positions":[{"company", "industry" ,"title", "start date":"end date"}, {"company", "industry" ,"title", "start date":"end date"}]
+}
