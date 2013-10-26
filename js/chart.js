@@ -1,4 +1,48 @@
 var dataset = [
+  {"positions":[{
+        "kind": "MBA",
+        "duration": 2,
+        "skills":["Strategy", "Finance", "Marketing", "Business Planning"],
+    },
+    {
+        "kind": "Senior Analyst",
+        "duration": 7,
+        "skills":["Market analysis", "Cross function team management"],
+    },
+    {
+        "kind": "Director",
+        "duration": 12,
+        "skills":["Competitive analysis", "Corporate development"],
+    },
+    {
+        "kind": "VP",
+        "duration": 25,
+        "skills":["Strategic Partnerships", "Acquisition Integration"],
+    },
+    ],
+  },
+  {"positions":[{
+        "kind": "Senior Architect",
+        "duration": 3,
+        "skills":["Compiler analysis", "Unit Performance Analysis", "Architecture decision validation studies"],
+    },
+    {
+        "kind": "Chip Architect",
+        "duration": 10,
+        "skills":["Competitive analysis", "Project management", "Cross unit team schedule management"],
+    },
+    {
+        "kind": "Lead Architect",
+        "duration": 15,
+        "skills":["Architecture Design", "Low power design", "Programming model"],
+    },
+    {
+        "kind": "Principal Architect",
+        "duration": 22,
+        "skills":["Architectural Exploration", "Industry trends", "Programming model"],
+    },
+    ],
+  },
     {"positions":[{
         "kind": "Doctoral Candidate",
         "duration": 3,
@@ -50,50 +94,6 @@ var dataset = [
   },
 
 
-  {"positions":[{
-        "kind": "Senior Architect",
-        "duration": 3,
-        "skills":["Compiler analysis", "Unit Performance Analysis", "Architecture decision validation studies"],
-    },
-    {
-        "kind": "Chip Architect",
-        "duration": 10,
-        "skills":["Competitive analysis", "Project management", "Cross unit team schedule management"],
-    },
-    {
-        "kind": "Lead Architect",
-        "duration": 15,
-        "skills":["Architecture Design", "Low power design", "Programming model"],
-    },
-    {
-        "kind": "Principal Architect",
-        "duration": 22,
-        "skills":["Architectural Exploration", "Industry trends", "Programming model"],
-    },
-    ],
-  },
-  {"positions":[{
-        "kind": "MBA",
-        "duration": 2,
-        "skills":["Strategy", "Finance", "Marketing", "Business Planning"],
-    },
-    {
-        "kind": "Senior Analyst",
-        "duration": 7,
-        "skills":["Market analysis", "Cross function team management"],
-    },
-    {
-        "kind": "Director",
-        "duration": 12,
-        "skills":["Competitive analysis", "Corporate development"],
-    },
-    {
-        "kind": "VP",
-        "duration": 25,
-        "skills":["Strategic Partnerships", "Acquisition Integration"],
-    },
-    ],
-  },
   
 {"positions":[{
         "kind": "Lead Engineer",
