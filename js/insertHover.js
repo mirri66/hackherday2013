@@ -13,7 +13,7 @@ function insertHover(){
 				
 			}
 			//node.innerHTML=innerhtml;
-			node.onmouseover= function(){tooltip.pop(this,"test")};
+		//	node.onmouseover= function(){tooltip.pop(this,"test")};
 		}
 		//document.getElementById();
 	}
