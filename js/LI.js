@@ -3,12 +3,17 @@ function onLinkedInLoad() {
 }
 
 function onLinkedInAuth() {
-     IN.API.Profile("me").fields("industry", "firstName","lastName").result(displayProfiles);
+     IN.API.Profile("me")
+     .fields("industry", "firstName","lastName","positions","headline","location","summary","specialties","email-address","interests","skills","educations")
+     .result(displayProfiles);
 }
 
 function displayProfiles(profiles) {
      member = profiles.values[0];
      document.getElementById("profiles").innerHTML = 
-          "<p id=\"" + member.id + "\">Hello " +  member.firstName + " " + member.lastName + " " + member.industry + "</p>";
+          "<ul>"+
+          "<li id=\"" + member.id + "\">Name: " +  member.firstName + " " + member.lastName + "</li>" +
+          "<li> Industry: " + member.industry + "</li>" +
+          "</ul>";
           console.log(profiles)
 }
