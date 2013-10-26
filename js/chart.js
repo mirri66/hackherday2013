@@ -51,19 +51,24 @@ var dataset = [
 
 
   {"positions":[{
-        "kind": "Software engineer",
+        "kind": "Senior Architect",
         "duration": 3,
-        "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
+        "skills":["Compiler analysis", "Unit Performance Analysis", "Architecture decision validation studies"],
     },
     {
-        "kind": "Lead Software Engineer",
+        "kind": "Chip Architect",
         "duration": 10,
-        "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
+        "skills":["Competitive analysis", "Project management", "Cross unit team schedule management"],
     },
     {
-        "kind": "VP Engineering",
-        "duration": 17,
-        "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
+        "kind": "Lead Architect",
+        "duration": 15,
+        "skills":["Architecture Design", "Low power design", "Programming model"],
+    },
+    {
+        "kind": "Principal Architect",
+        "duration": 22,
+        "skills":["Architectural Exploration", "Industry trends", "Programming model"],
     },
     ],
   },
