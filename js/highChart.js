@@ -26,15 +26,14 @@ $(function () {
             },
             tooltip: {
                 valueSuffix: '',
-                valuePrefix:'',
+                valuePrefix: '',
+			    animation : true,
+				useHTML : true,	
             },
            plotOptions:{
              line: {
                 dataLabels:{
-                  enabled: true,
-                  formatter:function(){
-                     return '<b>'+this.title+'</b>';
-                   }
+                  enabled: false,
                  }
                },
             },
@@ -46,8 +45,9 @@ $(function () {
             },
             series: [{
                 name: 'Academician',
-                data: [5, 10,12, 14.5, 18.2],
-               title:['Post-doctoral fellow','Post-doctoral fellow','Assistant Professor','Associate Professor','Professor']
+                allowPointSelect: true,
+				data: [5, 10,12, 14.5, 18.2],
+                title:['Post-doctoral fellow','Post-doctoral fellow','Assistant Professor','Associate Professor','Professor']
             }]
         });
     });
