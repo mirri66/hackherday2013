@@ -1,7 +1,10 @@
+
+    
+
 $(function () {
         $('#container').highcharts({
             title: {
-                text: 'Year-wise predicted salary',
+                text: 'Year-wise predictable growth for different career options',
                 x: -20 //center
             },
             subtitle: {
@@ -9,12 +12,11 @@ $(function () {
                 x: -20
             },
             xAxis: {
-                categories: ['2 years', '4 years', '6 years', '8 years', '10 years', '12 years',
-                    '14 years', '16 years', '18 years', '20 years', '22 years', '25 years']
+                categories: ['2 years', '4 years', '6 years', '8 years', '10 years']
             },
             yAxis: {
                 title: {
-                    text: 'Salary ($ thousands)'
+                    text: 'Growth'
                 },
                 plotLines: [{
                     value: 0,
@@ -23,7 +25,18 @@ $(function () {
                 }]
             },
             tooltip: {
-                valueSuffix: 'year'
+                valueSuffix: '',
+                valuePrefix:'',
+            },
+           plotOptions:{
+             line: {
+                dataLabels:{
+                  enabled: true,
+                  formatter:function(){
+                     return '<b>'+this.title+'</b>';
+                   }
+                 }
+               },
             },
             legend: {
                 layout: 'vertical',
@@ -32,17 +45,9 @@ $(function () {
                 borderWidth: 0
             },
             series: [{
-                name: 'Academia',
-                data: ['Post-doctoral fellow', 'Assistant Professor','Assistant Professor', 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-            }, {
-                name: 'Patent Law',
-                data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-            }, {
-                name: 'Software Engineering',
-                data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
-            }, {
-                name: 'Data Analytics',
-                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                name: 'Academician',
+                data: [5, 10,12, 14.5, 18.2],
+               title:['Post-doctoral fellow','Post-doctoral fellow','Assistant Professor','Associate Professor','Professor']
             }]
         });
     });
