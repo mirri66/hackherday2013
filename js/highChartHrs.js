@@ -3,6 +3,9 @@
 
 $(function () {
         $('#container').highcharts({
+			chart : {
+				type: 'spline'
+			},
             title: {
                 text: 'Average hours per week',
                 x: -20 //center
@@ -46,8 +49,8 @@ $(function () {
             },
             series: [{
                 name: 'Academia',
-                data: [60, 40, 40, 65, 30 ],
-               title:['Doctoral Candidate','Post-doctoral fellow','Senior Research Scientist','Assistant Professor','Associate Professor']
+                data: [60, 40, 40, 65 ],
+               title:['Doctoral Candidate','Post-doctoral fellow','Senior Research Scientist','Assistant Professor']
             },
             {
                 name: 'Patent Law',
