@@ -46,26 +46,32 @@ $(function () {
             },
             series: [{
                 name: 'Academia',
-                data: [46, 65,65,86.8, 115],
-               title:['Post-doctoral fellow','Assistant Professor','Assistant Professor','Associate Professor','Professor']
+                data: [46, 65, 85, 96.8, 115],
+               title:['Doctoral Candidate','Post-doctoral fellow','Senior Research Scientist','Assistant Professor','Associate Professor']
             },
             {
                 name: 'Patent Law',
-                data: [80, 80,119, 119, 189],
-               title:['Technical specialist','Technical specialist','Patent Agent','Patent Agent','Patent Attorney']
+                data: [80, 100, 119, 189],
+               title:['JD IP Law','Associate','Patent Consultant','IP Attorney']
             },
             {
-                name: 'Software Engineering',
-                data: [120, 120,129, 129, 190],
-               title:['Software Engineer','Software Engineer','Lead Software Engineer','Lead Software Engineer','VP Engineering']
+                name: 'Computer Hardware',
+                data: [100, 120, 139, 190],
+               title:['Senior Architect','Chip Architect','Lead Architect','Principal Architect']
             },
-              {
-                name: 'Data Analytics',
-                data: [90, 112,112, 140, 223],
-               title:['Data Analyst','Senior Analyst','Senior Analyst','Director of Analytics','CTO']
+             {
+                name: 'Business Management',
+                data: [90, 112, 140, 223],
+               title:['MBA', 'Senior Analyst', 'Director', 'VP']
+             },
+             {
+                name: 'Start-ups',
+                data: [90, 142, 190, 253],
+               title:['Lead Engineer', 'Director of Analytics', 'Cofounder', 'CEO']
             },
             ]
         });
     });
     
+  
 
