@@ -19,8 +19,9 @@ function onLinkedInAuth() {
 function displayProfiles(profiles) {
      member = profiles.values[0];
     
-     document.getElementById("profiles").innerHTML = 
-          "<p id=\"" + member.id + "\">Welcome, " +  member.firstName + ".</p>"
+insertHover();
+    // document.getElementById("profiles").innerHTML = 
+     //     "<p id=\"" + member.id + "\">Welcome, " +  member.firstName + ".</p>"
      }
 
 /* display results */
