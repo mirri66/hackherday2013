@@ -94,6 +94,29 @@ var dataset = [
     },
     ],
   },
+  
+{"positions":[{
+        "kind": "Lead Engineer",
+        "duration": 3,
+        "skills":["Technical Leadership", "R", "Weka", "Object Oriented Programming", "Collaboration", "Data Analysis", "Machine Learning"],
+    },
+    {
+        "kind": "Director of Analytics",
+        "duration": 6,
+        "skills":["Product management", "Statistical Analysis", "Deep learning", "Predictive analytics"],
+    },
+    {
+        "kind": "Cofounder",
+        "duration": 11,
+        "skills":["Product Innovation", "Market strategy", "Rapid Prototyping", "Venture fund raising", "Industry trends"],
+    },
+    {
+        "kind": "CEO",
+        "duration": 15,
+        "skills":["Industry Innovation", "Company Strategy"],
+    },
+    ],
+  },
 ];
 
 for (var x =0; x<dataset.length;x++){
