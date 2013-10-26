@@ -4,7 +4,7 @@
 
   <title>inQuest</title>
   <link rel="stylesheet" href="css/style.css">
-  <!--link rel="stylesheet" href="css/chart.css"-->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
@@ -31,7 +31,7 @@
       <td id="logo"><a href="index.html"><img src="images/inquest_logo.png" width="180px"></a></td>
       <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <!--user profile info, probably remove later-->
-      <td><div id="profiles"></div></td>
+      <!--td><div id="profiles"></div></td-->
       <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
       <td><script type="in/Login"><a href='#' onclick='IN.User.logout()'>Logout</a></script></td>
       </tr>
@@ -40,9 +40,13 @@
       
   </div>
   <div id="buttons">
-     <a href='salary.html'>Salary</a>
-     <a href='index.html'>Positions</a>
-     <a href='hours.html'>Flexibility</a>
+<ul class="nav nav-pills" style="color: black;">
+  <li>
+    <a href="salary.html">Salary</a>
+  </li>
+  <li class="active"><a href="index.html">Positions</a></li>
+  <li><a href="hours.html">Flexibility</a></li>
+</ul>
   </div>
   <div id="intro">
   <!--script type="in/Login">

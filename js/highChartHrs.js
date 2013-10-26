@@ -27,22 +27,14 @@ $(function () {
             tooltip: {
                 valueSuffix: '',
                 valuePrefix: '',
-<<<<<<< Updated upstream
-			    animation : true,
-				useHTML : true,	
-=======
->>>>>>> Stashed changes
             },
            plotOptions:{
              line: {
                 dataLabels:{
                   enabled: false,
-<<<<<<< Updated upstream
-=======
                   formatter:function(){
                      return '<b>'+this.series.title+'</b>';
                    }
->>>>>>> Stashed changes
                  }
                },
             },
@@ -53,13 +45,6 @@ $(function () {
                 borderWidth: 0
             },
             series: [{
-<<<<<<< Updated upstream
-                name: 'Academician',
-                allowPointSelect: true,
-				data: [5, 10,12, 14.5, 18.2],
-                title:['Post-doctoral fellow','Post-doctoral fellow','Assistant Professor','Associate Professor','Professor']
-            }]
-=======
                 name: 'Academia',
                 data: [42, 54,54,52, 54],
                title:['Post-doctoral fellow','Assistant Professor','Assistant Professor','Associate Professor','Professor']
@@ -80,7 +65,6 @@ $(function () {
                title:['Data Analyst','Senior Analyst','Senior Analyst','Director of Analytics','CTO']
             },
             ]
->>>>>>> Stashed changes
         });
     });
     
