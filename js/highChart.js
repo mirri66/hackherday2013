@@ -1,7 +1,7 @@
 
 function myFormatter() {
        var indexFile='index.html';
-        return '<a href="http://localhost:8080/"+indexfile/> '+this.x+'</a>';
+        return '<a href="http://localhost:8080/"+indexfile/> '+this.series.name+'</a>';
     }
     
 
@@ -64,17 +64,17 @@ $(function () {
             },
             {
                 name: 'Computer Hardware',
-                data: [100, 120, 139, 190],
+                data: [101, 120, 139, 191],
                title:['Senior Architect','Chip Architect','Lead Architect','Principal Architect']
             },
              {
                 name: 'Business Management',
-                data: [90, 112, 140, 223],
+                data: [91, 112, 140, 223],
                title:['MBA', 'Senior Analyst', 'Director', 'VP']
              },
              {
                 name: 'Start-ups',
-                data: [90, 142, 190, 253],
+                data: [92, 142, 190, 253],
                title:['Lead Engineer', 'Director of Analytics', 'Cofounder', 'CEO']
             },
             ]
