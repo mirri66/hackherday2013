@@ -1,35 +1,45 @@
 var dataset = [
     {"positions":[{
-        "kind": "Post-doctoral fellow",
-        "duration": 2,
-        "skills":["Science writing", "Experiment Design"],
+        "kind": "Doctoral Candidate",
+        "duration": 3,
+        "skills":["Computer Architecture", "Compilers", "Algorithms", "Simulations", "Graduate Research"],
       },
       {
-        "kind": "Assistant Professor",
+        "kind": "Post Doctoral Fellow",
         "duration": 6,
         "skills":["Independent Research", "Experiment Design"],
       },
       {
-        "kind": "Associate Professor",
+        "kind": "Senior Research Scientist",
         "duration": 10,
-        "skills":["Independent Research", "Experiment Design"],
+        "skills":["Industry Research", "Analytical Modeling", "Industry Collaboration", "Research idea product integration"],
       },
        {
-        "kind": "Professor",
-        "duration": 16,
-        "skills":["Independent Research", "Experiment Design"],
+        "kind": "Assistant Professor",
+        "duration": 15,
+        "skills":["Teaching", "Research Advisor"],
+      },
+       {
+        "kind": "Associate Professor",
+        "duration": 20,
+        "skills":["Teaching", "Research Advisor", "Grant Proposals"],
       },
         ],
     },
     {"positions":[{
-        "kind": "Associate",
+        "kind": "JD IP Law",
         "duration": 3,
-        "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
+        "skills": [ "Patent Law", "Patent Litigation", "Patent Prosecution" ],
+    },
+    {
+		"kind": "Associate",
+        "duration": 6,
+        "skills":[ "Patent Law", "Patent Litigation", "Patent Prosecution", "Contract Drafting"],
     },
     {
         "kind": "Patent Consultant",
-        "duration": 8,
-        "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
+        "duration": 10,
+        "skills":["Intellectual Property Transactions and Licensing", "Litigation Drafting", "Cross function team management"],
     },
     {
         "kind": "Intellectual Patent Attorney",
@@ -38,6 +48,8 @@ var dataset = [
     },
     ],
   },
+
+
   {"positions":[{
         "kind": "Software engineer",
         "duration": 3,
@@ -189,5 +201,5 @@ circles.attr("cx", function(d, i) {
   .attr("stroke-width", function(d) {
     return 5/2;
   })
-  .attr("id","test.html");
+.attr("id",function(d,i){return String(d.kind)});
 };
