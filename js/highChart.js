@@ -1,4 +1,7 @@
 
+function myFormatter(x) {
+        return x;
+    }
     
 
 $(function () {
@@ -27,9 +30,10 @@ $(function () {
                     color: '#808080'
                 }]
             },
-            tooltip: {
+			tooltip: {
                 valueSuffix: '',
                 valuePrefix: '',
+                formatter: myFormatter(this.x)
             },
            plotOptions:{
              line: {
