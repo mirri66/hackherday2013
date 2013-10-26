@@ -1,6 +1,4 @@
 
-    
-
 $(function () {
         $('#container').highcharts({
             title: {
