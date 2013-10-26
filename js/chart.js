@@ -273,16 +273,10 @@ circles.attr("cx", function(d, i) {
     return 5/2;
   })
 .attr("id",function(d,i){return String(d.kind)})
-//.on("click", function(d,i){HandleClick(d3.select(this));}) 
 .append("svg:title")
 .text(function(d){return d.skills})
 ; 
 };
 
 
-function HandleClick(selection){
-  console.log(selection);
-  //tooltip.pop(this,"test");
-  var extra= document.createElement('div');
-  selection.append(extra);
-};
+
