@@ -1,5 +1,11 @@
 var dataset = [
-  {"positions":[{
+  {"positions":[
+  {
+        "kind": "Business Management",
+        "duration": -0.269,
+        "skills":["Strategy", "Finance", "Marketing", "Business Planning"],
+    },
+    {
         "kind": "MBA",
         "duration": 2,
         "skills":["Strategy", "Finance", "Marketing", "Business Planning"],
@@ -16,12 +22,17 @@ var dataset = [
     },
     {
         "kind": "VP",
-        "duration": 25,
+        "duration": 23,
         "skills":["Strategic Partnerships", "Acquisition Integration"],
     },
     ],
+    "industry":"Business Management",
   },
   {"positions":[{
+        "kind": "Computer Hardware",
+        "duration": -0.269,
+        "skills":["Compiler analysis", "Unit Performance Analysis", "Architecture decision validation studies"],
+    },{
         "kind": "Senior Architect",
         "duration": 3,
         "skills":["Compiler analysis", "Unit Performance Analysis", "Architecture decision validation studies"],
@@ -42,8 +53,14 @@ var dataset = [
         "skills":["Architectural Exploration", "Industry trends", "Programming model"],
     },
     ],
+    "industry":"Computer Hardware",
   },
-    {"positions":[{
+    {"positions":[
+    {
+        "kind": "Academia",
+        "duration": -0.269,
+        "skills":["Computer Architecture", "Compilers", "Algorithms", "Simulations", "Graduate Research"],
+    },{
         "kind": "Doctoral Candidate",
         "duration": 3,
         "skills":["Computer Architecture", "Compilers", "Algorithms", "Simulations", "Graduate Research"],
@@ -69,8 +86,13 @@ var dataset = [
         "skills":["Teaching", "Research Advisor", "Grant Proposals"],
       },
         ],
+        "industry":"Academia",
     },
     {"positions":[{
+        "kind": "Patent Law",
+        "duration": -0.269,
+        "skills":["Patent Law", "Patent Litigation", "Patent Prosecution"],
+    },{
         "kind": "JD IP Law",
         "duration": 3,
         "skills": [ "Patent Law", "Patent Litigation", "Patent Prosecution" ],
@@ -91,11 +113,16 @@ var dataset = [
         "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
     },
     ],
+    "industry":"Patent Law",
   },
 
 
   
 {"positions":[{
+        "kind": "Start-ups",
+        "duration": -0.269,
+        "skills":["Technical Leadership", "R", "Weka", "Object Oriented Programming", "Collaboration", "Data Analysis", "Machine Learning"],
+    },{
         "kind": "Lead Engineer",
         "duration": 3,
         "skills":["Technical Leadership", "R", "Weka", "Object Oriented Programming", "Collaboration", "Data Analysis", "Machine Learning"],
@@ -116,10 +143,13 @@ var dataset = [
         "skills":["Industry Innovation", "Company Strategy"],
     },
     ],
+  "industry":"Start-ups",
   },
 ];
 
 for (var x =0; x<dataset.length;x++){
+
+
 
 var svg = d3.select("#test").append("svg")
   .attr("width",1800)
@@ -127,14 +157,16 @@ var svg = d3.select("#test").append("svg")
 var displace = 20;
 var xdisp=20;
 
+var text = svg
+   .append("text") 
+   .text(dataset[x].industry)
+   .attr("x", 0)
+   .attr("y", function(){return displace+25;})
+   .attr("font-family", "Raleway")
+   .attr("font-weight","bold")
+   .attr("font-size","1.2em");
 
 
-var tooltip = d3.select("body")
-    .append("div")
-    .style("position", "absolute")
-    .style("z-index", "10")
-    .style("visibility", "hidden")
-    .text("a simple tooltip");
 
 /* labels */
 /*var text = svg.selectAll("text")
