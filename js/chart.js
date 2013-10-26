@@ -11,7 +11,7 @@ var dataset = [
       },
       {
         "kind": "Associate Professor",
-        "duration": 12,
+        "duration": 10,
         "skills":["Independent Research", "Experiment Design"],
       },
        {
@@ -49,14 +49,14 @@ var dataset = [
         "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
     },
     {
-        "kind": "Senior Architect",
+        "kind": "VP Engineering",
         "duration": 17,
         "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
     },
     ],
   },
   {"positions":[{
-        "kind": "Analyst",
+        "kind": "Data Analyst",
         "duration": 3,
         "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
     },
@@ -66,12 +66,12 @@ var dataset = [
         "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
     },
     {
-        "kind": "Director",
+        "kind": "Director of Analytics",
         "duration": 12,
         "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
     },
     {
-        "kind": "VP of product",
+        "kind": "CTO",
         "duration": 23,
         "skills":["Patent procurement", "Open Source Licensing", "Strategic creation procurement", "Patent enforcement"],
     },

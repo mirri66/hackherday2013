@@ -27,11 +27,11 @@ function displayProfiles(profiles) {
 function displayresults() {
 
       /* hide first */
-      $('#profiles').css("display","none");
+      //$('#profiles').css("display","none");
       $('#test').css("display","none");
       
       /* construct chart */
-      $('#profiles').show('fast');
+      //$('#profiles').show('fast');
       $('#test').show('slow');
 
 
