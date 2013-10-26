@@ -1,6 +1,5 @@
-{"r_basicprofile":["Principal Architect":"Computer Hardware"],
-"positions":[{"Computer Hardware", "Lead Architect", "skills":["Architecture Design", "Architectural Exploration", "Low power design", "Programming model"]}, 
-             {"Computer Hardware", "Chip Architect", "skills": ["Competitive analysis", "Project management", "Cross unit team schedule management"]}, 
-             {"Computer Hardware", "Senior Architect", "skills": ["Compiler analysis", "Unit Performance Analysis", "Architecture decision validation studies"]}, 
+{"r_basicprofile":["CEO":"Consumer Software"],
+"positions":[{"Computer Software", "Lead Engineer", "skills":["Technical Leadership", "R", "Weka", "Object Oriented Programming", "Collaboration", "Data Analysis", "Machine Learning"]}, 
+             {"Computer Software", "Director Of Engineering", "skills": ["Product management", "Statistical Analysis", "Deep learning", "Predictive analytics"]}, 
+             {"Computer Software", "Cofounder", "skills": ["Product Innovation", "Market strategy", "Rapid Prototyping", "Venture fund raising", "Industry trends"]}, 
 }
-
