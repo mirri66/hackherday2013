@@ -1,4 +1,6 @@
 function onLinkedInLoad() {
+  $('#test').css("display","none");
+      
     IN.Event.on(IN, "auth", onLinkedInAuth);
 }
 
