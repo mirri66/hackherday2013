@@ -1,8 +1,10 @@
 
+    
+
 $(function () {
         $('#container').highcharts({
             title: {
-                text: 'Average hours per week',
+                text: 'Average salary',
                 x: -20 //center
             },
             subtitle: {
@@ -14,7 +16,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: 'Hours per week'
+                    text: 'Salary (thousands)'
                 },
                 plotLines: [{
                     value: 0,
@@ -25,22 +27,14 @@ $(function () {
             tooltip: {
                 valueSuffix: '',
                 valuePrefix: '',
-<<<<<<< Updated upstream
-			    animation : true,
-				useHTML : true,	
-=======
->>>>>>> Stashed changes
             },
            plotOptions:{
              line: {
                 dataLabels:{
                   enabled: false,
-<<<<<<< Updated upstream
-=======
                   formatter:function(){
                      return '<b>'+this.series.title+'</b>';
                    }
->>>>>>> Stashed changes
                  }
                },
             },
@@ -51,34 +45,26 @@ $(function () {
                 borderWidth: 0
             },
             series: [{
-<<<<<<< Updated upstream
-                name: 'Academician',
-                allowPointSelect: true,
-				data: [5, 10,12, 14.5, 18.2],
-                title:['Post-doctoral fellow','Post-doctoral fellow','Assistant Professor','Associate Professor','Professor']
-            }]
-=======
                 name: 'Academia',
-                data: [42, 54,54,52, 54],
+                data: [46, 65,65,86.8, 115],
                title:['Post-doctoral fellow','Assistant Professor','Assistant Professor','Associate Professor','Professor']
             },
             {
                 name: 'Patent Law',
-                data: [50, 50,60, 60, 80],
+                data: [80, 80,119, 119, 189],
                title:['Technical specialist','Technical specialist','Patent Agent','Patent Agent','Patent Attorney']
             },
             {
                 name: 'Software Engineering',
-                data: [48, 48,57, 57, 60],
+                data: [120, 120,129, 129, 190],
                title:['Software Engineer','Software Engineer','Lead Software Engineer','Lead Software Engineer','VP Engineering']
             },
               {
                 name: 'Data Analytics',
-                data: [54, 54,57, 57, 60],
+                data: [90, 112,112, 140, 223],
                title:['Data Analyst','Senior Analyst','Senior Analyst','Director of Analytics','CTO']
             },
             ]
->>>>>>> Stashed changes
         });
     });
     
