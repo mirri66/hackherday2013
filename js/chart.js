@@ -127,6 +127,15 @@ var svg = d3.select("#test").append("svg")
 var displace = 20;
 var xdisp=20;
 
+
+
+var tooltip = d3.select("body")
+    .append("div")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .text("a simple tooltip");
+
 /* labels */
 /*var text = svg.selectAll("text")
    .data(dataset)
@@ -211,9 +220,11 @@ circles.attr("cx", function(d, i) {
 */
 //for (var x =0; x<dataset.length;x++){
 
-var circles = svg.selectAll("circle")
+//var circles = svg.selectAll("circle")
+var circles = svg.selectAll("a.legend_link")
   .data(dataset[x].positions)
   .enter()
+  .append("a").attr("xlink:href", function(d,i){return 'http://www.linkedin.com/vsearch/p?keywords='+String(d.kind)})
   .append("circle");
 
 circles.attr("cx", function(d, i) {
@@ -229,5 +240,17 @@ circles.attr("cx", function(d, i) {
   .attr("stroke-width", function(d) {
     return 5/2;
   })
-.attr("id",function(d,i){return String(d.kind)});
+.attr("id",function(d,i){return String(d.kind)})
+//.on("click", function(d,i){HandleClick(d3.select(this));}) 
+.append("svg:title")
+.text(function(d){return d.skills})
+; 
+};
+
+
+function HandleClick(selection){
+  console.log(selection);
+  //tooltip.pop(this,"test");
+  var extra= document.createElement('div');
+  selection.append(extra);
 };
