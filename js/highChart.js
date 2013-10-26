@@ -1,6 +1,7 @@
 
-function myFormatter(x) {
-        return x;
+function myFormatter() {
+       var indexFile='index.html';
+        return '<a href="http://localhost:8080/"+indexfile/> '+this.x+'</a>';
     }
     
 
@@ -33,7 +34,7 @@ $(function () {
 			tooltip: {
                 valueSuffix: '',
                 valuePrefix: '',
-                formatter: myFormatter(this.x)
+                formatter: myFormatter
             },
            plotOptions:{
              line: {
