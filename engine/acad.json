@@ -1,9 +1,3 @@
-{"r_basicprofile":["Vice President":"Computer Software"],
-"positions":[{"Business", "MBA", "skills":["Strategy", "Finance", "Marketing", "Business Planning"]}, 
-             {"Consulting", "Senior Analyst", "skills": ["Market analysis", "Cross function team management"]}, 
-			 {"Mid size company", "Director", "skills": ["Competitive analysis", "Corporate development"]}, 
-			 {"Small business", "Vice President", "skills": ["Strategic Partnerships", "Acquisition Integration"]}],
-}
 {"r_basicprofile" : ["Assistant Professor":"Research"],
 "positions":[{"Research", "Doctoral Candidate", "skills":["Computer Architecture", "Compilers", "Algorithms", "Simulations", "Graduate Research"]},
 			 {"Research", "Post Doctoral Candidate", "skills": ["Independent Research", "Experiment Design"]}, 
