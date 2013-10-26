@@ -51,5 +51,7 @@ body{
 
 #test{
 height:1000px;
+padding-left:1.9em;
+background-color: rgba(256,256,256,0.8);
 
 }
