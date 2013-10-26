@@ -3,7 +3,10 @@
 
 $(function () {
         $('#container').highcharts({
-            title: {
+			chart : {
+				type: 'spline'
+			},
+			title: {
                 text: 'Average salary',
                 x: -20 //center
             },
@@ -46,8 +49,8 @@ $(function () {
             },
             series: [{
                 name: 'Academia',
-                data: [46, 65, 85, 96.8, 115],
-               title:['Doctoral Candidate','Post-doctoral fellow','Senior Research Scientist','Assistant Professor','Associate Professor']
+                data: [46, 65, 85, 96.8],
+               title:['Doctoral Candidate','Post-doctoral fellow','Senior Research Scientist','Assistant Professor']
             },
             {
                 name: 'Patent Law',

@@ -3,6 +3,9 @@
 
 $(function () {
         $('#container').highcharts({
+			chart : {
+				type: 'spline'
+			},
             title: {
                 text: 'Average hours per week',
                 x: -20 //center
@@ -46,23 +49,28 @@ $(function () {
             },
             series: [{
                 name: 'Academia',
-                data: [42, 54,54,52, 54],
-               title:['Post-doctoral fellow','Assistant Professor','Assistant Professor','Associate Professor','Professor']
+                data: [60, 40, 40, 65 ],
+               title:['Doctoral Candidate','Post-doctoral fellow','Senior Research Scientist','Assistant Professor']
             },
             {
                 name: 'Patent Law',
-                data: [50, 50,60, 60, 80],
-               title:['Technical specialist','Technical specialist','Patent Agent','Patent Agent','Patent Attorney']
+                data: [60, 80, 60, 40],
+               title:['JD IP Law','Associate','Patent Consultant','IP Attorney']
             },
             {
-                name: 'Software Engineering',
-                data: [48, 48,57, 57, 60],
-               title:['Software Engineer','Software Engineer','Lead Software Engineer','Lead Software Engineer','VP Engineering']
+                name: 'Computer Hardware',
+                data: [50, 60, 69, 40],
+               title:['Senior Architect','Chip Architect','Lead Architect','Principal Architect']
             },
-              {
-                name: 'Data Analytics',
-                data: [54, 54,57, 57, 60],
-               title:['Data Analyst','Senior Analyst','Senior Analyst','Director of Analytics','CTO']
+             {
+                name: 'Business Management',
+                data: [50, 50, 60, 40],
+               title:['MBA', 'Senior Analyst', 'Director', 'VP']
+             },
+             {
+                name: 'Start-ups',
+                data: [60, 70, 80, 85],
+               title:['Lead Engineer', 'Director of Analytics', 'Cofounder', 'CEO']
             },
             ]
         });
